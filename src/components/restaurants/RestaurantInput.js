@@ -3,21 +3,21 @@ import React, { Component } from 'react';
 class RestaurantInput extends Component {
 
   state = {
-    name: ''
+    text: ''
   }
 
   handleOnChange(event) {
     this.setState({
-      name: event.target.value,
-    });
+      text: event.target.value
+    })
   }
 
   handleOnSubmit(event) {
     event.preventDefault();
-    this.props.addRestaurant(this.state.name);
+    this.props.addRestaurant(this.state.text)
     this.setState({
-      name: '',
-    });
+      text: ''
+    })
   }
   render() {
     return (
