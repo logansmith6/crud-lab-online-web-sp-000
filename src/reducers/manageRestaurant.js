@@ -6,6 +6,7 @@ export default function manageRestaurants(state = {
   switch (action.type) {
     case 'ADD_RESTAURANT':
       const restaurant = { name: action.name}
+      return {...state, restaurants: [...state.restaurants, restaurant]}
   }
 
 }
