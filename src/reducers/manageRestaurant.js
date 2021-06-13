@@ -1,9 +1,7 @@
 import cuid from 'cuid';
 import {combineReducers} from 'redux'
 
-export default function manageRestaurants(state = {
-  restaurants: []
-}, action) {
+export default function manageRestaurants(state=[], action) {
   switch (action.type) {
     case 'ADD_RESTAURANT':
       return {...state, {text: action.text, id: cuid()}}
