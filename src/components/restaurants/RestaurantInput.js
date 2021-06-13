@@ -18,6 +18,7 @@ class RestaurantInput extends Component {
     this.setState({
       text: ''
     })
+    store.dispatch({ type: 'ADD_RESTAURANT' })
   }
   render() {
     return (
