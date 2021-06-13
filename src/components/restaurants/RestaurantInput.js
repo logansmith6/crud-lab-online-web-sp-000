@@ -25,7 +25,7 @@ class RestaurantInput extends Component {
       <form onSubmit={(event) => this.handleOnSubmit(event)}>
         <input
           type="text"
-          value={this.state.bandName}
+          value={this.state.text}
           onChange={(event) => this.handleOnChange(event)} />
         <input type="submit" />
       </form>
