@@ -12,6 +12,7 @@ import Restaurant from './Restaurant'
       </ul>
     );
   }
+}
 
 
 export default Restaurants;
