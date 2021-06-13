@@ -6,7 +6,7 @@ const Restaurants = props => {
 
   return (
     <ul>
-      {bands}
+      {restaurants}
       </ul>
   )
 
