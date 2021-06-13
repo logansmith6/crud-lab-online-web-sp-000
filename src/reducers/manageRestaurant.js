@@ -7,6 +7,9 @@ export default function manageRestaurants(state = {
     case 'ADD_RESTAURANT':
       const restaurant = { name: action.name}
       return {...state, restaurants: [...state.restaurants, restaurant]}
+
+  default:
+      return state;
   }
 
 }
