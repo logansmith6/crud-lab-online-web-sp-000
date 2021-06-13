@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import Restaurant from './Restaurant'
 
-const Restaurants = props => {
-      const restaurants = props.restaurants.map(restaurant => <Restaurant key={restaurant.id} {...restaurant} />)
+class Restaurants extends Component {
 
-  return (
-    <ul>
-      {restaurants}
+  render() {
+    return(
+      <ul>
+        Restaurants Component
       </ul>
-  )
-
+    );
   }
+};
 
 export default Restaurants;
