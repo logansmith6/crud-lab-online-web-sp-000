@@ -1,4 +1,5 @@
 import cuid from 'cuid';
+import {combineReducers} from 'redux'
 
 export default function manageRestaurants(state = {
   restaurants: []
