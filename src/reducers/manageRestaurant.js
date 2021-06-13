@@ -4,7 +4,7 @@ import {combineReducers} from 'redux'
 function manageRestaurants(state=[], action) {
   switch (action.type) {
     case 'ADD_RESTAURANT':
-      return {...state, {text: action.text, id: cuid()}}
+      return [...state, {text: action.text, id: cuid()}]
 
   default:
       return state;
