@@ -13,4 +13,4 @@ function manageRestaurants(state=[], action) {
   }
 
 }
-export default combineReducers({restaurants: manageRestaurants})
+export default combineReducers({restaurants: manageRestaurants, reviews: manageReviews})
