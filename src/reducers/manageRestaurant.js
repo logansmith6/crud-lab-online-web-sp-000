@@ -1,5 +1,6 @@
 import cuid from 'cuid';
 import {combineReducers} from 'redux'
+import manageReviews from './manageReviews';
 
 function manageRestaurants(state=[], action) {
   switch (action.type) {
